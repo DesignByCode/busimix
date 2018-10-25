@@ -1,0 +1,19 @@
+
+
+.nav
+    text-transform: uppercase
+    font-weight: bold
+
+    &__logo
+        position: absolute
+        top: 6px
+        left: 15px
+        height: 60px
+        max-width: 70%
+
+        &__small
+            +media-custom('min', '1079px')
+                display: none
+        &__large
+            +media-custom('max', '1080px')
+                display: none
